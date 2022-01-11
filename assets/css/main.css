@@ -1,2 +1,12 @@
 @import url("./cssreset.css");
+body {
+  font-family: GilroyRegular;
+}
+
+@font-face {
+  font-family: "GilroyRegular";
+  src: url("../fonts/GilroyRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 /*# sourceMappingURL=main.css.map */

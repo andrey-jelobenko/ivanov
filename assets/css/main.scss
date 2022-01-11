@@ -1,1 +1,14 @@
 @import url("./cssreset.css");
+
+body {
+  font-family: GilroyRegular;
+}
+
+@font-face {
+  // название шрифта
+  font-family: "GilroyRegular";
+  // адрес шрифта и тип
+  src: url("../fonts/GilroyRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
