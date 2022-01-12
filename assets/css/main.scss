@@ -2,6 +2,65 @@
 
 body {
   font-family: GilroyRegular;
+  font-size: 14px;
+}
+
+.header {
+  background-color: #262626;
+  min-height: 100px;
+  position: fixed;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link {
+  background-color: #262626;
+  min-height: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.header__link:link,
+.header__link:visited,
+.header__link:hover .header__link:active {
+  color: white;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 130px;
+  //   background-color: #bada55;
+  margin-left: -12px;
+  border-right: 1px solid white;
+}
+
+.phone:hover {
+  background-color: #bada55;
+  border-right: 1px solid #bada55;
+}
+
+.phone__icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header__dummy {
+  min-width: 130px;
+  background-color: #bada55;
+  margin-right: -12px;
+}
+
+@media (max-width: 460px) {
+  .header__dummy {
+    display: none;
+  }
 }
 
 @font-face {
