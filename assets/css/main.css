@@ -1,4 +1,8 @@
 @import url("./cssreset.css");
+:root {
+  --header-height: 100px;
+}
+
 body {
   font-family: GilroyRegular;
   font-size: 14px;
@@ -6,10 +10,11 @@ body {
 
 header {
   position: fixed;
+  z-index: 99;
 }
 
 .header__row {
-  min-height: 100px;
+  min-height: var(--header-height);
   background-color: #262626;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -30,7 +35,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100px;
+  min-height: var(--header-height);
   max-width: 130px;
   margin-left: -12px;
   border-right: 1px solid white;
@@ -58,7 +63,7 @@ header {
 }
 
 .header__nav {
-  min-height: 100px;
+  min-height: var(--header-height);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +78,52 @@ header {
 
 .header__nav:hover {
   background-color: yellowgreen;
+}
+
+.main__row {
+  padding-top: var(--header-height);
+}
+
+.main__carousel {
+  padding: 0;
+}
+
+ul.main__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: square;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.description__button,
+.description__button:hover,
+.description__button:visited,
+.description__button:focus,
+.description__button:target,
+.description__button:active {
+  background-color: #bada55;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.description__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.description__title {
+  font-size: 48px;
+  line-height: 68px;
+}
+
+.description__video {
+  width: 100%;
 }
 
 @font-face {
