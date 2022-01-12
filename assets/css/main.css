@@ -15,10 +15,12 @@ header {
 
 .header__row {
   min-height: var(--header-height);
-  background-color: #262626;
+  background-color: #bada55;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 2px solid #262626;
+  border-top: 2px solid #262626;
 }
 
 .header__phone {
@@ -38,12 +40,11 @@ header {
   min-height: var(--header-height);
   max-width: 130px;
   margin-left: -12px;
-  border-right: 1px solid white;
+  background-color: yellowgreen;
 }
 
 .header__phone:hover {
-  background-color: #bada55;
-  border-right: 1px solid #bada55;
+  background-color: yellowgreen;
 }
 
 .phone__icon {
@@ -56,6 +57,8 @@ header {
 
 .header__link {
   text-decoration: none;
+  display: block;
+  width: 120px;
 }
 
 .header-link {
