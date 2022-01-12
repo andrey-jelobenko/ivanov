@@ -20,21 +20,45 @@
     <title>NEW Build</title>
   </head>
   <body>
-    <header class="container-fluid header">
-      <a class="header__link" href="tel:+79161234567">
-        <div class="phone">
-          <i class="fas fa-phone-alt phone__icon"></i
-          ><span class="phone__number">+7 (916) 123-45-67</span>
-        </div></a
-      >
-      <div class="header__company">
-        <img
-          class="img-fluid"
-          src="./assets/img/company.png"
-          alt="Логотип NEW Build"
-        />
+    <header class="container-fluid">
+      <div class="row header__row">
+        <div class="col-lg-4">
+          <a class="header__link header-link" href="tel:+79161234567">
+            <div class="header__phone">
+              <i class="fas fa-phone-alt phone__icon"></i
+              ><span class="phone__number">+7 (916) 123-45-67</span>
+            </div></a
+          >
+        </div>
+        <div class="header__logo col-lg-4 text-center">
+          <img
+            class="img-fluid mx-auto"
+            src="./assets/img/company.png"
+            alt="Логотип NEW Build"
+          />
+        </div>
+        <nav class="col-lg-4">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a
+                class="nav-link active header-link header__nav"
+                aria-current="page"
+                href="#"
+                >ГЛАВНАЯ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link header__nav" href="#">УСЛУГИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link header__nav" href="#">ПРОЕКТЫ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link header__nav" href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="header__dummy"></div>
     </header>
     <main></main>
     <footer></footer>

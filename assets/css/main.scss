@@ -5,62 +5,61 @@ body {
   font-size: 14px;
 }
 
-.header {
-  background-color: #262626;
-  min-height: 100px;
+// #262626;
+// #bada55;
+
+header {
   position: fixed;
-  color: white;
-  display: flex;
-  justify-content: space-between;
+}
+
+.header__row {
+  min-height: 100px;
+  background-color: #262626;
   align-items: center;
 }
 
-.header__link {
-  background-color: #262626;
-  min-height: 100px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-}
-
-.header__link:link,
-.header__link:visited,
-.header__link:hover .header__link:active {
-  color: white;
-}
-
-.phone {
+.header__phone {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-width: 130px;
-  //   background-color: #bada55;
+  justify-content: center;
+  min-height: 100px;
+  max-width: 130px;
   margin-left: -12px;
-  border-right: 1px solid white;
 }
 
-.phone:hover {
+.header__phone:hover {
   background-color: #bada55;
-  border-right: 1px solid #bada55;
 }
 
 .phone__icon {
-  font-size: 32px;
   margin-bottom: 10px;
 }
 
-.header__dummy {
-  min-width: 130px;
-  background-color: #bada55;
+.phone__icon {
+  font-size: 28px;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header-link {
+  color: white;
+}
+
+.header__nav {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav:last-child {
   margin-right: -12px;
 }
 
-@media (max-width: 460px) {
-  .header__dummy {
-    display: none;
-  }
+.header__nav:hover {
+  background-color: yellowgreen;
 }
 
 @font-face {
