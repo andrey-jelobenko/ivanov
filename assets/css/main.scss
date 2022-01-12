@@ -26,10 +26,12 @@ header {
   min-height: 100px;
   max-width: 130px;
   margin-left: -12px;
+  border-right: 1px solid white;
 }
 
 .header__phone:hover {
   background-color: #bada55;
+  border-right: 1px solid #bada55;
 }
 
 .phone__icon {
