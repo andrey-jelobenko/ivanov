@@ -6,7 +6,7 @@
 
 body {
   font-family: GilroyRegular;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 // #262626;
@@ -51,6 +51,23 @@ header {
   font-size: 28px;
 }
 
+.phone__number {
+  font-size: 14px;
+}
+
+.price__title {
+  font-size: 20px;
+}
+
+.price__value {
+  font-size: 36px;
+  color: #bada55;
+}
+
+.price__currency {
+  font-size: 34px;
+}
+
 .header__link {
   text-decoration: none;
   display: block;
@@ -75,7 +92,7 @@ header {
   background-color: yellowgreen;
 }
 
-.main__row {
+.main__tp {
   padding-top: var(--header-height);
 }
 
@@ -114,6 +131,16 @@ ul.main__description {
 
 .description__video {
   width: 100%;
+}
+
+img.plan {
+  width: 733px;
+  height: 550px;
+}
+
+footer {
+  background-color: #bada55;
+  border-top: 2px solid #262626;
 }
 
 @font-face {
