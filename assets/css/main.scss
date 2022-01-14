@@ -2,15 +2,14 @@
 
 :root {
   --header-height: 100px;
+  --color-first: #bada55;
+  --color-second: #262626;
 }
 
 body {
   font-family: GilroyRegular;
   font-size: 16px;
 }
-
-// #262626;
-// #bada55;
 
 header {
   position: fixed;
@@ -19,10 +18,10 @@ header {
 
 .header__row {
   min-height: var(--header-height);
-  background-color: #bada55;
+  background-color: var(--color-first);
   align-items: center;
-  border-bottom: 2px solid #262626;
-  border-top: 2px solid #262626;
+  border-bottom: 2px solid var(--color-second);
+  border-top: 2px solid var(--color-second);
 }
 
 .header__phone {
@@ -33,14 +32,14 @@ header {
   min-height: var(--header-height);
   max-width: 130px;
   margin-left: -12px;
-  //   border-right: 1px solid #262626;
+  //   border-right: 1px solid var(--color-second);
   background-color: yellowgreen;
 }
 
 .header__phone:hover {
-  //   background-color: #bada55;
+  //   background-color: var(--color-first);
   background-color: yellowgreen;
-  //   border-right: 1px solid #bada55;
+  //   border-right: 1px solid var(--color-first);
 }
 
 .phone__icon {
@@ -55,13 +54,19 @@ header {
   font-size: 14px;
 }
 
+.price__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .price__title {
   font-size: 20px;
 }
 
 .price__value {
   font-size: 36px;
-  color: #bada55;
+  color: var(--color-first);
 }
 
 .price__currency {
@@ -92,7 +97,7 @@ header {
   background-color: yellowgreen;
 }
 
-.main__tp {
+.main__pt {
   padding-top: var(--header-height);
 }
 
@@ -114,7 +119,7 @@ ul.main__description {
 .description__button:focus,
 .description__button:target,
 .description__button:active {
-  background-color: #bada55;
+  background-color: var(--color-first);
   border: none;
   outline: none;
   box-shadow: none;
@@ -139,8 +144,8 @@ img.plan {
 }
 
 footer {
-  background-color: #bada55;
-  border-top: 2px solid #262626;
+  background-color: var(--color-first);
+  border-top: 2px solid var(--color-second);
 }
 
 @font-face {
