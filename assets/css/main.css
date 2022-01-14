@@ -8,6 +8,12 @@
 body {
   font-family: GilroyRegular;
   font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-rows: 1fr auto min-content;
+      grid-template-rows: 1fr auto -webkit-min-content;
+      grid-template-rows: 1fr auto min-content;
 }
 
 header {

@@ -9,6 +9,9 @@
 body {
   font-family: GilroyRegular;
   font-size: 16px;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr auto min-content;
 }
 
 header {
