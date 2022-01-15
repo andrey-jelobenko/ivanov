@@ -22,7 +22,7 @@
   <body>
     <header class="container-fluid">
       <div class="row header__row">
-        <div class="col-lg-5">
+        <div class="col-lg-5 col-md-4 col-sm-4 col-4">
           <a class="header__link header-link" href="tel:+79152865262">
             <div class="header__phone">
               <i class="fas fa-phone-alt phone__icon"></i
@@ -30,14 +30,14 @@
             </div></a
           >
         </div>
-        <div class="header__logo col-lg-2 text-center">
+        <div class="header__logo col-lg-2 col-md-2 col-sm-4 col-4 text-center">
           <img
             class="img-fluid mx-auto"
             src="./assets/img/logo.png"
             alt="СК Ковчег"
           />
         </div>
-        <nav class="col-lg-5">
+        <nav class="col-lg-5 col-md-6 d-none d-md-block">
           <ul class="nav justify-content-end">
             <li class="nav-item">
               <a
@@ -64,6 +64,70 @@
             </li>
           </ul>
         </nav>
+        <div
+          class="col-lg-5 col-md-6 col-sm-4 col-4 d-block d-md-none text-end pe-5"
+        >
+          <nav class="navbar navbar-light fixed-end">
+            <div class="container-fluid burger-right">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end menu-burger-bg"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item menu-burger-line">
+                      <a
+                        class="nav-link header-link header__nav ps-4"
+                        href="index.html"
+                        >ГЛАВНАЯ</a
+                      >
+                    </li>
+                    <li class="nav-item menu-burger-line">
+                      <a
+                        class="nav-link header-link header__nav ps-4"
+                        href="project0.html"
+                        >ПРОЕКТЫ</a
+                      >
+                    </li>
+                    <li class="nav-item menu-burger-line">
+                      <a
+                        class="nav-link header-link header__nav ps-4"
+                        href="services.html"
+                        >УСЛУГИ</a
+                      >
+                    </li>
+                    <li class="nav-item menu-burger-line">
+                      <a
+                        class="nav-link header-link header__nav ps-4"
+                        href="contacts.html"
+                        >КОНТАКТЫ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="container-fluid main__pt"><h1>Услуги</h1></main>

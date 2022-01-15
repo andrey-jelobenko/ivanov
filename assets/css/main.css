@@ -67,6 +67,11 @@ header {
   font-size: 14px;
 }
 
+.burger-icon {
+  color: white;
+  font-size: 36px;
+}
+
 .price__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,7 +104,7 @@ header {
 }
 
 .header-link {
-  color: white;
+  color: white !important;
 }
 
 .header__nav {
@@ -118,6 +123,25 @@ header {
 
 .header__nav:hover {
   background-color: yellowgreen;
+}
+
+.burger-right {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.menu-burger-bg {
+  border-left: 2px solid var(--color-second);
+  background-color: var(--color-first);
+}
+
+.menu-burger-line {
+  border-top: 1px solid var(--color-second);
+}
+
+.menu-burger-line:last-child {
+  border-bottom: 1px solid var(--color-second);
 }
 
 .main__pt {
