@@ -47,7 +47,6 @@ header {
           justify-content: center;
   min-height: var(--header-height);
   max-width: 130px;
-  margin-left: -12px;
   background-color: yellowgreen;
 }
 
@@ -70,6 +69,12 @@ header {
 .burger-icon {
   color: white;
   font-size: 36px;
+}
+
+.offcanvas-header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .price__box {
@@ -117,11 +122,21 @@ header {
           align-items: center;
 }
 
-.header__nav:last-child {
-  margin-right: -12px;
+.header__nav-burger {
+  min-height: calc(var(--header-height) / 1.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__nav:hover {
+  background-color: yellowgreen;
+}
+
+.header__nav-burger:hover {
   background-color: yellowgreen;
 }
 
