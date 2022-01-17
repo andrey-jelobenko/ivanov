@@ -1,6 +1,7 @@
 @import url("./cssreset.css");
 :root {
   --header-height: 100px;
+  --header-height-brdr: 104px;
   --color-first: #bada55;
   --color-second: #262626;
 }
@@ -136,7 +137,7 @@ header {
   background-color: yellowgreen;
 }
 
-.header__nav-burger:hover {
+.header__nav-:hover {
   background-color: yellowgreen;
 }
 
@@ -160,7 +161,7 @@ header {
 }
 
 .main__pt {
-  padding-top: var(--header-height);
+  padding-top: var(--header-height-brdr);
 }
 
 .main__carousel {
