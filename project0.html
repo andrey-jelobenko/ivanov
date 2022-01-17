@@ -331,316 +331,434 @@
           </div>
         </div>
       </section>
-      <section class="row">
+      <!-- <section class="py-lg-5"></section> -->
+      <!-- tabs начало -->
+      <section class="container">
         <h1 class="description__title py-lg-4">Каркасный дом SV-011/96-K</h1>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5">
-          <!-- карусель plan начало -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-plan-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-plan"
+              type="button"
+              role="tab"
+              aria-controls="pills-plan"
+              aria-selected="false"
+            >
+              Планировка
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-fasad-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-fasad"
+              type="button"
+              role="tab"
+              aria-controls="pills-fasad"
+              aria-selected="false"
+            >
+              Фасады
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-isometry-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-isometry"
+              type="button"
+              role="tab"
+              aria-controls="pills-isometry"
+              aria-selected="false"
+            >
+              Изометрия
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-description-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-description"
+              type="button"
+              role="tab"
+              aria-controls="pills-description"
+              aria-selected="true"
+            >
+              Характеристики
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
           <div
-            id="carouselPlan"
-            class="carousel carousel-dark slide"
-            data-bs-ride="false"
-            data-bs-touch="true"
+            class="tab-pane fade show active"
+            id="pills-plan"
+            role="tabpanel"
+            aria-labelledby="pills-plan-tab"
           >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselPlan"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselPlan"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./assets/img/projects/0/plan 1_1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
+            <section class="row">
+              <div class="col-lg-7">
+                <!-- карусель plan начало -->
+                <div
+                  id="carouselPlan"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="false"
+                  data-bs-touch="true"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselPlan"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselPlan"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img/projects/0/plan 1_1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img/projects/0/plan 1_2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPlan"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPlan"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <!-- карусель plan окончание -->
               </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/projects/0/plan 1_2.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
+              <div class="col-lg-1"></div>
+              <div class="col-lg-4">
+                <!-- карусель экспликация начало -->
+                <div
+                  id="carouselExpl"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="false"
+                  data-bs-touch="true"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExpl"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExpl"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img/projects/0/expl1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img/projects/0/expl2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExpl"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExpl"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <!-- карусель экспликация окончание -->
               </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselPlan"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselPlan"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            </section>
           </div>
-          <!-- карусель plan окончание -->
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3">
-          <!-- карусель экспликация начало -->
           <div
-            id="carouselExpl"
-            class="carousel carousel-dark slide"
-            data-bs-ride="false"
-            data-bs-touch="true"
+            class="tab-pane fade"
+            id="pills-fasad"
+            role="tabpanel"
+            aria-labelledby="pills-fasad-tab"
           >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExpl"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExpl"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./assets/img/projects/0/expl1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
+            <section class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8">
+                <!-- карусель фасад начало -->
+                <div
+                  id="carouselFasad"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="false"
+                  data-bs-touch="true"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselFasad"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselFasad"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselFasad"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselFasad"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 4"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img/projects/0/Северный Фасад.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img/projects/0/Восточный Фасад.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img/projects/0/Южный Фасад.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img/projects/0/Западный Фасад.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselFasad"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselFasad"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <!-- карусель фасад окончание -->
               </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/projects/0/expl2.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExpl"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExpl"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="col-lg-2"></div>
+            </section>
           </div>
-          <!-- карусель экспликация окончание -->
+          <div
+            class="tab-pane fade"
+            id="pills-isometry"
+            role="tabpanel"
+            aria-labelledby="pills-isometry-tab"
+          >
+            <section class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8">
+                <!-- карусель перспектива начало -->
+                <div
+                  id="carouselPersp"
+                  class="carousel slide"
+                  data-bs-ride="false"
+                  data-bs-touch="true"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselPersp"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselPersp"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img/projects/0/перспектива этаж 1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img/projects/0/перспектива этаж 2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPersp"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPersp"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <!-- карусель перспектива окончание -->
+              </div>
+              <div class="col-lg-2"></div>
+            </section>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-description"
+            role="tabpanel"
+            aria-labelledby="pills-description-tab"
+          >
+            <section class="row">
+              <section class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                  <!-- карусель фасад начало -->
+                  <p>
+                    =================<br />
+                    Этажей:1<br />
+                    Размер: 12,24х9,36 м<br />
+                    S общая: 117,67 кв.м<br />
+                    Балкон: нет<br />
+                    Терраса: есть<br />
+                    Крыльцо: есть<br />
+                    Эркер: нет<br />
+                    Санузлов: 1<br />
+                    Спален:3<br />
+                    Крыша: двухскатная<br />
+                    Кукушка: нет<br />
+                    2 входа: есть<br />
+                    Гараж: нет<br />
+                    Топочная:есть<br />
+                    =================
+                  </p>
+                  <!-- карусель фасад окончание -->
+                </div>
+                <div class="col-lg-3"></div>
+              </section>
+              <div class="col-lg-4"></div>
+            </section>
+          </div>
         </div>
-        <div class="col-lg-4"></div>
       </section>
-      <section class="row">
-        <h1 class="description__title py-lg-4">Каркасный дом SV-011/96-K</h1>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-          <!-- карусель фасад начало -->
-          <div
-            id="carouselFasad"
-            class="carousel carousel-dark slide"
-            data-bs-ride="false"
-            data-bs-touch="true"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselFasad"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselFasad"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselFasad"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselFasad"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./assets/img/projects/0/Северный Фасад.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/projects/0/Восточный Фасад.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/projects/0/Южный Фасад.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/projects/0/Западный Фасад.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselFasad"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselFasad"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- карусель фасад окончание -->
-        </div>
-        <div class="col-lg-3"></div>
-      </section>
-      <section class="row">
-        <h1 class="description__title py-lg-4">Каркасный дом SV-011/96-K</h1>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-          <!-- карусель перспектива начало -->
-          <div
-            id="carouselPersp"
-            class="carousel slide"
-            data-bs-ride="false"
-            data-bs-touch="true"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselPersp"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselPersp"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./assets/img/projects/0/перспектива этаж 1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/projects/0/перспектива этаж 2.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselPersp"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselPersp"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- карусель перспектива окончание -->
-        </div>
-        <div class="col-lg-3"></div>
-      </section>
+      <!-- tabs окончание -->
       <section class="py-lg-5"></section>
     </main>
     <footer class="py-lg-5"></footer>
