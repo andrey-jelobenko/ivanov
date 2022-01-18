@@ -186,10 +186,46 @@ header {
   flex-grow: 1;
   border-bottom: 1px dashed var(--color-second);
   flex-basis: 10px;
+  position: relative;
+  top: -5px;
+}
+
+div > .description__video {
+  display: flex;
+  padding-bottom: 1px;
 }
 
 .description__video {
   width: 100%;
+}
+
+.specifications {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specification___side {
+  flex-basis: 50%;
+}
+
+.specifications__item {
+  display: flex;
+  font-size: 18px;
+}
+
+.specifications__item > span {
+  display: flex;
+  color: #9c9c9c;
+  border-color: #9c9c9c;
+}
+
+.specifications__item > span:last-child {
+  color: black;
+}
+.specifications__item > span > img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 
 footer {
