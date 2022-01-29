@@ -3,7 +3,7 @@
   --header-height: 100px;
   --header-height-brdr: 100px;
   --color-first: #bada55;
-  --color-second: #1c1300;
+  --color-second: #3e6f71;
 }
 
 .nav-pills .nav-link.active,
@@ -20,6 +20,10 @@ body {
   -ms-grid-rows: 1fr auto min-content;
       grid-template-rows: 1fr auto -webkit-min-content;
       grid-template-rows: 1fr auto min-content;
+}
+
+.btn {
+  border-radius: 0;
 }
 
 .sticky {
@@ -137,9 +141,9 @@ body {
 .katalog__link:hover,
 .katalog__link_prev:hover,
 .katalog__link_next:hover {
-  color: var(--color-second);
+  color: black;
   background-color: var(--color-first);
-  border-color: var(--color-second);
+  border-color: black;
 }
 
 .katalog__link:hover,
@@ -302,7 +306,7 @@ div > .description__video {
 }
 
 .specification {
-  background: rgba(24, 24, 24, 0.65);
+  background-color: var(--color-second);
 }
 
 .specifications__item {
@@ -328,6 +332,19 @@ div > .description__video {
   width: 25px;
   height: 25px;
   margin-right: 10px;
+}
+
+ul.nav-pills {
+  font-size: 18px;
+  font-family: "Gilroy-SemiBold";
+}
+
+.nav-link:not(.active) {
+  color: black;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
 }
 
 .footer_bg {

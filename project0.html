@@ -118,66 +118,53 @@
                 data-bs-slide-to="6"
                 aria-label="Slide 7"
               ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="7"
-                aria-label="Slide 8"
-              ></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="./assets/img/projects/0/1_1 - Photo.jpg"
+                  src="./assets/img/projects/0/1_1-Photo.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./assets/img/projects/0/1_2 - Фото.jpg"
+                  src="./assets/img/projects/0/1_2-Photo.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./assets/img/projects/0/1_3 - Фото.jpg"
+                  src="./assets/img/projects/0/1_3-Photo.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./assets/img/projects/0/1_4 - Фото.jpg"
+                  src="./assets/img/projects/0/1_4-Photo.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./assets/img/projects/0/1_5 - Фото.jpg"
+                  src="./assets/img/projects/0/1_5-Photo.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./assets/img/projects/0/1_6 - Фото.jpg"
+                  src="./assets/img/projects/0/1_6-Photo.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="./assets/img/projects/0/1_7 - Фото.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/projects/0/1_8 - Фото.jpg"
+                  src="./assets/img/projects/0/1_7-Photo.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -438,140 +425,126 @@
             aria-labelledby="pills-plan-tab"
           >
             <section class="row">
-              <div class="col-lg-7">
-                <!-- карусель plan начало -->
+              <div class="col-lg-6">
+                <!-- plan начало -->
+                <img
+                  src="./assets/img/projects/0/plan.jpg"
+                  style="border: 1px solid #9dc11b"
+                  alt="..."
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#planExplicationModal"
+                />
+
+                <!-- Modal -->
                 <div
-                  id="carouselPlan"
-                  class="carousel carousel-dark slide"
-                  data-bs-ride="false"
-                  data-bs-touch="true"
+                  class="modal fade"
+                  id="planExplicationModal"
+                  tabindex="-1"
+                  aria-labelledby="planExplicationModalLabel"
+                  aria-hidden="true"
                 >
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carouselPlan"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselPlan"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        src="./assets/img/projects/0/plan 1_1.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div
+                        id="carouselPlanExplIndicators"
+                        class="carousel slide carousel-dark"
+                        data-bs-ride="carousel"
+                        data-bs-interval="300000"
+                        data-bs-touch="true"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#carouselPlanExplIndicators"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselPlanExplIndicators"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="./assets/img/projects/0/plan.jpg"
+                              class="d-block w-100"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./assets/img/projects/0/explication.jpg"
+                              class="d-block w-100"
+                              alt="..."
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselPlanExplIndicators"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselPlanExplIndicators"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/img/projects/0/plan 1_2.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
                   </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselPlan"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselPlan"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
-                <!-- карусель plan окончание -->
+                <!-- plan окончание -->
               </div>
               <div class="col-lg-1"></div>
-              <div class="col-lg-4">
-                <!-- карусель экспликация начало -->
+              <div class="col-lg-5">
+                <!-- экспликация начало -->
+                <img
+                  src="./assets/img/projects/0/explication.jpg"
+                  style="border: 1px solid #9dc11b"
+                  alt="..."
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#planExplicationModal"
+                />
+
+                <!-- Modal -->
                 <div
-                  id="carouselExpl"
-                  class="carousel carousel-dark slide"
-                  data-bs-ride="false"
-                  data-bs-touch="true"
+                  class="modal fade"
+                  id="planExplicationModal"
+                  tabindex="-1"
+                  aria-labelledby="planExplicationModalLabel"
+                  aria-hidden="true"
                 >
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExpl"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExpl"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
                       <img
-                        src="./assets/img/projects/0/expl1.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/img/projects/0/expl2.jpg"
-                        class="d-block w-100"
+                        src="./assets/img/projects/0/explication.jpg"
                         alt="..."
                       />
                     </div>
                   </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExpl"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExpl"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
-                <!-- карусель экспликация окончание -->
+                <!-- экспликация окончание -->
               </div>
             </section>
           </div>
@@ -586,15 +559,17 @@
               <div class="col-lg-8">
                 <!-- карусель фасад начало -->
                 <div
-                  id="carouselFasad"
+                  id="carouselFacade"
                   class="carousel carousel-dark slide"
-                  data-bs-ride="false"
+                  data-bs-ride="carousel"
                   data-bs-touch="true"
+                  data-bs-interval="300000"
+                  style="border: 1px solid #9dc11b"
                 >
                   <div class="carousel-indicators">
                     <button
                       type="button"
-                      data-bs-target="#carouselFasad"
+                      data-bs-target="#carouselFacade"
                       data-bs-slide-to="0"
                       class="active"
                       aria-current="true"
@@ -602,19 +577,19 @@
                     ></button>
                     <button
                       type="button"
-                      data-bs-target="#carouselFasad"
+                      data-bs-target="#carouselFacade"
                       data-bs-slide-to="1"
                       aria-label="Slide 2"
                     ></button>
                     <button
                       type="button"
-                      data-bs-target="#carouselFasad"
+                      data-bs-target="#carouselFacade"
                       data-bs-slide-to="2"
                       aria-label="Slide 3"
                     ></button>
                     <button
                       type="button"
-                      data-bs-target="#carouselFasad"
+                      data-bs-target="#carouselFacade"
                       data-bs-slide-to="3"
                       aria-label="Slide 4"
                     ></button>
@@ -622,37 +597,49 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img
-                        src="./assets/img/projects/0/Северный Фасад.jpg"
+                        src="./assets/img/projects/0/facade-north.jpg"
                         class="d-block w-100"
                         alt="..."
                       />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Северный фасад</h5>
+                      </div>
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="./assets/img/projects/0/Восточный Фасад.jpg"
+                        src="./assets/img/projects/0/facade-east.jpg"
                         class="d-block w-100"
                         alt="..."
                       />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Восточный фасад</h5>
+                      </div>
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="./assets/img/projects/0/Южный Фасад.jpg"
+                        src="./assets/img/projects/0/facade-south.jpg"
                         class="d-block w-100"
                         alt="..."
                       />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Южный фасад</h5>
+                      </div>
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="./assets/img/projects/0/Западный Фасад.jpg"
+                        src="./assets/img/projects/0/facade-west.jpg"
                         class="d-block w-100"
                         alt="..."
                       />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Западный фасад</h5>
+                      </div>
                     </div>
                   </div>
                   <button
                     class="carousel-control-prev"
                     type="button"
-                    data-bs-target="#carouselFasad"
+                    data-bs-target="#carouselFacade"
                     data-bs-slide="prev"
                   >
                     <span
@@ -664,7 +651,7 @@
                   <button
                     class="carousel-control-next"
                     type="button"
-                    data-bs-target="#carouselFasad"
+                    data-bs-target="#carouselFacade"
                     data-bs-slide="next"
                   >
                     <span
@@ -688,71 +675,13 @@
             <section class="row">
               <div class="col-lg-2"></div>
               <div class="col-lg-8">
-                <!-- карусель перспектива начало -->
-                <div
-                  id="carouselPersp"
-                  class="carousel slide"
-                  data-bs-ride="false"
-                  data-bs-touch="true"
-                >
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carouselPersp"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselPersp"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        src="./assets/img/projects/0/перспектива этаж 1.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/img/projects/0/перспектива этаж 2.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselPersp"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselPersp"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-                <!-- карусель перспектива окончание -->
+                <!-- перспектива начало -->
+                <img
+                  src="./assets/img/projects/0/perspective.jpg"
+                  style="border: 1px solid #9dc11b"
+                  alt="..."
+                />
+                <!-- перспектива окончание -->
               </div>
               <div class="col-lg-2"></div>
             </section>
@@ -769,7 +698,8 @@
                 <div>
                   <video
                     class="description__video image-fluid"
-                    src="./assets/img/projects/0/уфф.mp4"
+                    style="border: 1px solid #9dc11b"
+                    src="./assets/img/projects/0/video_0.mp4"
                     controls
                     loop
                   ></video>
@@ -781,16 +711,14 @@
         </section>
       </section>
       <!-- tabs окончание -->
-      <div class="py-lg-5"></div>
+      <div class="py-lg-3"></div>
     </main>
     <footer class="container-fluid footer_bg mt-lg-5">
-      <section class="container my-lg-3">
+      <section class="container mb-lg-3">
         <div class="row">
-          <div class="col-lg-2 pt-lg-3">
+          <div class="col-lg-2 mt-lg-4">
             <img src="assets/img/logo-footer.png" alt="..." />
-            <div class="text-center mt-lg-2 pt-lg-3 copy">
-              СК Ковчег&copy; 2022
-            </div>
+            <div class="text-center pt-lg-3 copy">&copy; 2022</div>
           </div>
           <div class="col-lg-2"></div>
           <div class="col-lg-4 d-flex align-items-center">
