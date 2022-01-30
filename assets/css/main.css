@@ -17,9 +17,13 @@ body {
   display: -ms-grid;
   display: grid;
   min-height: 100vh;
-  -ms-grid-rows: 1fr auto min-content;
-      grid-template-rows: 1fr auto -webkit-min-content;
-      grid-template-rows: 1fr auto min-content;
+  -ms-grid-rows: min-content auto min-content;
+      grid-template-rows: -webkit-min-content auto -webkit-min-content;
+      grid-template-rows: min-content auto min-content;
+}
+
+.wrap_bg {
+  background: #f6f6f6;
 }
 
 .btn {
@@ -157,6 +161,40 @@ body {
   background-size: 35px auto;
 }
 
+.katalog__link_next_empty,
+.katalog__link_empty {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.katalog__link_empty {
+  display: inline-block;
+  background: url(../img/button_left_arrow.png) no-repeat left center;
+  background-size: 35px auto;
+  border: 1px solid white;
+  padding: 7px 35px 7px 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.katalog__link_next_empty {
+  display: inline-block;
+  background: url(../img/button_right_arrow.png) no-repeat right center;
+  background-size: 35px auto;
+  border: 1px solid white;
+  padding: 7px 50px 7px 35px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact h2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
 .burger-icon {
   color: white;
   font-size: 36px;
@@ -205,23 +243,80 @@ body {
   color: white !important;
 }
 
-.burger-right {
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: flex-end !important;
+.projects_title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #26404d;
+  word-spacing: 1rem;
 }
 
-.menu-burger-bg {
-  border-left: 2px solid var(--color-second);
-  background-color: var(--color-first);
+.projects__link {
+  text-decoration: none;
+  color: #181818;
+  border: 1px solid white;
+  display: inline-block;
 }
 
-.menu-burger-line {
-  border-top: 1px solid var(--color-second);
+.projects__link:hover {
+  border-color: #a4c222;
+  color: #181818;
 }
 
-.menu-burger-line:last-child {
-  border-bottom: 1px solid var(--color-second);
+.projects__link .main img:hover {
+  opacity: 0;
+}
+
+.projects__link .main img:hover {
+  opacity: 0;
+}
+
+.main-1 {
+  background: url(../img/projects/1/plan.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.main-2 {
+  background: url(../img/projects/2/plan.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.projects__left {
+  letter-spacing: 0.02em;
+  color: #181818;
+  font-size: 17px;
+}
+
+.projects__right {
+  letter-spacing: -0.1px;
+  color: #262626;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.projects__middle::after,
+.projects__middle::before {
+  display: block;
+  width: 2px;
+  height: 25px;
+  content: "";
+  background: #e0e0e0;
+}
+
+.projects__middle img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.projects__middle img.last {
+  width: 22px;
+  height: 18px;
+}
+
+.i_size {
+  font-size: 15px;
 }
 
 .main__carousel {
@@ -399,6 +494,161 @@ footer a {
 .head_contact .call {
   font-size: 14px;
   color: #a4c222;
+}
+
+.contacts--gallery .title__text {
+  font-size: 40px;
+  line-height: 38px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts--gallery .title__subtitle {
+  font-size: 25px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #838383;
+  text-align: center;
+}
+
+.title {
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.title__text {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+}
+
+.contacts--gallery .title__text {
+  font-size: 40px;
+  line-height: 38px;
+  font-family: GothamPro, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts--gallery .title__subtitle {
+  font-size: 25px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #838383;
+  text-align: center;
+}
+
+.subtitle_line {
+  width: 90px;
+  height: 4px;
+  background: #a4c222;
+  margin: 50px auto;
+}
+
+.contact_intro {
+  background: #a4c222 url(../img/call-center.jpg) no-repeat;
+  background-size: cover;
+}
+
+.contact__phone .ico {
+  background-image: url(../img/contact_ico_02.svg);
+  float: left;
+  margin: 0 18px 0 0;
+  width: 38px;
+  height: 40px;
+  border-right: 1px solid #e0e0e0;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+}
+
+.contact__phone .phone {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+
+.contact__phone .phone:hover {
+  color: #a4c222;
+}
+
+.contact__phone .callback {
+  font-size: 16px;
+  line-height: 20px;
+  color: #a4c222;
+}
+
+.contact__phone .callback {
+  font-size: 16px;
+  line-height: 20px;
+  color: #a4c222;
+}
+
+.contact__time .ico {
+  background-image: url(../img/contact_ico_03.svg);
+  float: left;
+  margin: 0 18px 0 0;
+  width: 38px;
+  height: 40px;
+  border-right: 1px solid #e0e0e0;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+}
+
+.contact__time .time {
+  line-height: 20px;
+  font-weight: 400;
+  padding: 9px 0;
+  margin: 10px 0;
+}
+
+.contact__links .email {
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-right: 60px;
+  background: url(../img/letter_ico.png) no-repeat right center #a4c222;
+  background-size: 46px auto;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contact__links .email:hover {
+  background-color: #7a8e21;
+}
+
+.contact__links .whatsapp {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin: 0 0 0 5px;
+  background: url(../img/whatsapp_ico.png) no-repeat center center;
+  background-size: 100% auto;
+}
+
+.contact__links .telegram {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin: 0 0 0 5px;
+  background: url(../img/telegram_ico.png) no-repeat center center;
+  background-size: 100% auto;
 }
 
 @font-face {
