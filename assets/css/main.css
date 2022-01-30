@@ -292,6 +292,11 @@ body {
   background-size: contain;
 }
 
+.main-5 {
+  background: url(../img/projects/5/plan.jpg) no-repeat center;
+  background-size: contain;
+}
+
 .projects__left {
   letter-spacing: 0.02em;
   color: #181818;
