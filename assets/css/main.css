@@ -444,17 +444,22 @@ div > .description__video {
   margin-right: 10px;
 }
 
-ul.nav-pills {
-  font-size: 18px;
-  font-family: "Gilroy-SemiBold";
-}
-
 .nav-link:not(.active) {
   color: black;
 }
 
 .nav-pills .nav-link {
   border-radius: 0;
+  border: 2px solid var(--color-first);
+  margin-right: 25px;
+  font-size: 40px;
+  font-family: "Gilroy-SemiBold";
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+  border: 2px solid #7a8e21;
+  background-color: #7a8e21;
+  color: white;
 }
 
 .footer_bg {
