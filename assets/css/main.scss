@@ -8,6 +8,12 @@
   //   --color-second: #808080;
 }
 
+.nav.nav-pills {
+  position: relative;
+  right: 0px;
+  margin-top: 30px;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: var(--color-first);
@@ -404,7 +410,7 @@ div > .description__video {
   border-radius: 0;
   border: 2px solid var(--color-first);
   margin-right: 25px;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Gilroy-SemiBold";
 }
 .nav-pills .nav-link:hover:not(.active) {
