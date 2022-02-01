@@ -773,7 +773,12 @@ div > .description__video {
 }
 
 .specification {
-  background-color: var(--color-second);
+  background-image: url(../img/specifications_bg.jpg);
+  background-size: cover;
+}
+
+.specification___side {
+  background: rgba(24, 24, 24, 0.65);
 }
 
 .specifications__item {
@@ -787,7 +792,7 @@ div > .description__video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: #afafaf;
   border-color: white;
 }
 
