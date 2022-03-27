@@ -1033,6 +1033,10 @@ footer a {
   background-size: 100% auto;
 }
 
+.services__block {
+  margin: 100px 250px;
+}
+
 @font-face {
   font-family: "GilroyRegular";
   src: url("../fonts/GilroyRegular.ttf") format("truetype");
