@@ -975,7 +975,6 @@ footer a {
 }
 
 .illumination__img {
-  float: left;
   width: 450px;
   margin: 0 50px 35px 0;
 }
@@ -986,7 +985,12 @@ footer a {
 }
 
 .services__block {
-  margin: 100px;
+  display: flex;
+  margin: 100px 100px 0 100px;
+}
+
+.services__text {
+  margin-bottom: 30px;
 }
 
 .pleasant {
